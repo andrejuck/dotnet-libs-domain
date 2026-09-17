@@ -1,0 +1,12 @@
+name: Pipeline - Tagging
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  build:
+    uses: andrejuck/reusable-workflows/.github/workflows/dotnet-package-main.yml@main
+    with:
+      working-dir: code

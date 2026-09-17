@@ -1,0 +1,19 @@
+name: Pipeline - Dev
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    uses: andrejuck/reusable-workflows/.github/workflows/dotnet-package-dev.yml@main
+    with:
+      working-dir: code
+      csproj-file: Libs.Domain/Libs.Domain.csproj
+    secrets:
+      github-token: ${{ secrets.PACKAGE_TOKEN }}
