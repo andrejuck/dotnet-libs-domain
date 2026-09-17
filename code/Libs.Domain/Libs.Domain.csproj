@@ -5,6 +5,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Version>1.0.0</Version>
+        <Authors>Andre Juck</Authors>
+        <Company>Andre Juck</Company>
+        <PackageId>Juck.Libs.Domain</PackageId>
+        <Description>Dotnet libs for easier domain implementation</Description>
+        <RepositoryUrl>https://github.com/andrejuck/dotnet-libs-domain</RepositoryUrl>
+        <IsPackable>true</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
